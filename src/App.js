@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import Gerar from './components/Gerar'
+import Validar from './components/Validar'
+import './App.css'
+import { Card, CardTitle, CardText, Row, Col, Jumbotron, Container } from 'reactstrap';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+
+      <Jumbotron fluid className="jumbo">
+        <Container fluid>
+          <h3 className="display-3">Gerador e validador de CPF</h3>
+          <p className="lead">usando o framework React JS.</p>
+        </Container>
+      </Jumbotron>
+
+
+      <Row>
+        <Col sm='1'></Col>
+        <Col sm="5">
+          <Card body className='gerador shadow p-3 mb-5 bg-white rounded'>
+            <CardTitle tag="h3">Gerador</CardTitle>
+            <CardText>Clique no botão para gerar um número de CPF válido.</CardText>
+            <Gerar />
+          </Card>
+        </Col>
+
+
+        <Col sm="5">
+          <Card body className='gerador shadow p-3 mb-5 bg-white rounded'>
+            <CardTitle tag="h3">Validador</CardTitle>
+            <CardText>Insira um CPF e clique no botão para o validar.</CardText>
+            <Validar />
+          </Card>
+        </Col>
+        <Col sm='1'></Col>
+      </Row>
+
     </div>
   );
 }
