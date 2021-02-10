@@ -38,3 +38,8 @@ height: 35vh;
     background: rgb(255,255,255);
 background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(113,157,255,1) 100%);
 }
+
+.center {
+text-align: center;
+
+}

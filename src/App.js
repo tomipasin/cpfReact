@@ -11,8 +11,8 @@ function App() {
 
       <Jumbotron fluid className="jumbo">
         <Container fluid>
-          <h3 className="display-3">Gerador e validador de CPF</h3>
-          <p className="lead">usando o framework React JS.</p>
+          <h3 className="display-3 center">Gerador e validador de CPF</h3>
+          <p className="lead center">usando o framework React JS.</p>
         </Container>
       </Jumbotron>
 
